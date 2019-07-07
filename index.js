@@ -18,6 +18,7 @@ app.use(
     keys: [keys.cookieKey]
   })
 );
+//Tell passport to use cookies
 app.use(passport.initialize());
 app.use(passport.session());
 
