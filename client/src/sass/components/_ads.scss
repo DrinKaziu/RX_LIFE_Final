@@ -1,0 +1,54 @@
+.ads {
+  background-color: $color-gray;
+  
+  .apparel {
+    margin-top: 4rem;
+    border-bottom: .01rem solid $color-text;
+    .ad-box {
+      margin-left: 2.5rem;
+      
+      img {
+        float: left;
+        margin-right: 2rem;
+        height: 12rem;
+        width: 8rem;
+      }
+
+      .ad-box-button {
+        color: $color-primary;
+        border-color: $color-primary;
+      }
+    }
+  }
+
+  .app-download {
+    align-self: center; 
+    justify-self: center;
+
+    .app-download-logo {
+      float: left;
+      margin-right: 1rem;
+      width: 8rem;
+      height: 8rem;
+      background-color: $color-primary;
+      text-align: center;
+      border-radius: 1.5rem;
+
+      img {
+        margin-top: 12%;
+        width: 6rem;
+      }
+    }
+    p {
+      text-align: center;
+    }
+    .apple-store {
+      margin-right: 1rem;
+    }
+    .apple-store, 
+    .google-store {
+      width: 11rem;
+      margin-top: -.5rem;
+    }
+  }
+}

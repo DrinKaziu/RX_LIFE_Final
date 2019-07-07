@@ -1,0 +1,27 @@
+/* *,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(68, 67, 67);
+  background-color: #eeeeee;
+  letter-spacing: 3px;
+  line-height: 1.5em;
+  box-sizing: border-box;
+}
+
+a:link,
+a:visited {
+  text-decoration: none; 
+  color: inherit;
+} */
+

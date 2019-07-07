@@ -1,0 +1,62 @@
+.Points-Content {
+  background-color: $color-white;
+  margin: 4.5rem 0 4.5rem 0;
+  h1 {
+    font-size: 3rem;
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+  }
+  h3 {
+    font-family: 'Ubuntu';
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 2rem 0 2rem 0;
+  }
+  
+  .points-title {
+    margin-top: 3rem;
+    border-bottom: .1rem solid $color-text;
+    h3 {
+      margin-top: -1rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .app-download {
+    margin: 2rem 0 2rem 0;
+  }
+  .apple-store,
+  .google-store {
+    width: 12rem;
+  }
+  .how-it-works-content,
+  .keeping-track-content,
+  .rewards-content {
+    margin-top: 2rem;
+  }
+  .how-it-works {
+    margin-top: 2rem;
+    .app-screenshot {
+      width: 161%
+    }
+  }
+  .keeping-track {
+    margin-top: 2rem;
+    .running-group {
+      width: 100%;
+    }
+  }
+  .prizes {
+    margin-top: 2rem;
+    .prizes-img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.hero-one {
+  background-image: linear-gradient(
+        135deg, 
+        rgba($color-primary, 1) 0%,
+        rgba($color-secondary, 0.6) 68%,
+        rgba($color-secondary, 0.7) 68%,
+        rgba($color-primary, 1) 100%
+      ), 
+      url("../img/hero1_blue.png");
+  background-size: cover;
+  margin-top: -20rem;
+
+  .hero-one-content {
+    color: $color-white; 
+    margin-top: 12rem;
+    
+    .hero-one-content-textbox {
+      align-self: center;
+
+      .hero-one-content-textbox-heading-primary-main {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 6rem;
+        letter-spacing: 0.5rem;
+        line-height: 0.85em;
+      }
+      .hero-one-content-textbox-heading-primary-sub {
+        display: block;
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
+        margin-top: 1.5rem;
+      }
+      .hero-one-content-button {
+        color: $color-white;
+        border-color: $color-white;
+        margin-top: 2.5rem;
+      }
+    }
+  }
+}

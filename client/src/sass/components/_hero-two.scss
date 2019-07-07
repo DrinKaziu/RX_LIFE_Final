@@ -1,0 +1,36 @@
+.hero-two {
+  background:  url("../img/food-plates.png") no-repeat;
+  background-size: 51rem;
+  background-color: $color-white;
+  background-position: 80% center;
+
+  .hero-two-content {
+    color: $color-primary; 
+    margin-top: -8rem;
+    
+    .hero-two-content-textbox { 
+      align-self: center;
+
+      .hero-two-content-textbox-heading-primary-main {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 6rem;
+        letter-spacing: 0.5rem;
+        line-height: 0.85em;
+      }
+      .hero-two-content-textbox-heading-primary-sub {
+        display: block;
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
+        margin-top: 1.5rem;
+      }
+      .hero-two-content-button {
+        color: $color-primary;
+        border-color: $color-primary;
+        margin-top: 2.5rem;
+      }
+    }
+  }
+}

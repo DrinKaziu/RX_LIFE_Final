@@ -1,0 +1,13 @@
+.news {
+  grid-column: full-start / full-end;
+
+  .news-content {
+    display: grid;
+    grid-template-rows: 25vh;
+    grid-template-columns: [full-start] minmax(6rem, 2fr) [center-start] 8fr [center-end] minmax(6rem, 2fr) [full-end];
+
+    .news-content-box {
+      grid-column: center-start / center-end;
+    }
+  }
+}

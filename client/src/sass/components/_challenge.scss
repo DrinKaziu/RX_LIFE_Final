@@ -1,0 +1,103 @@
+.challenge {
+  .accordion {
+    margin-bottom: 4rem;
+  }
+  .challenge-section-title {
+    margin: 4.5rem 0 2.5rem 0;
+
+    img {
+      align-self: center;
+      width: 24rem;
+    }
+    
+    .title-text-content {
+      border-bottom: 0.1rem solid $color-text;
+      h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-top: 2.5rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .title {
+    background-size: cover;
+    filter: grayscale(100%);
+    opacity: 0.8;
+  }
+
+  .week-one-title {
+    background-image: url("../img/week1.jpg");
+    background-position: center;
+  }
+  .week-two-title {
+    background-image: url("../img/week2.jpg");
+    background-position: center 20%;
+  }
+  .week-three-title {
+    background-image: url("../img/week1.jpg");
+    background-position: center;
+  }
+
+  .title-content {
+    h1, h3, p {
+      color: $color-white;
+      font-family: 'Ubuntu', sans-serif;
+    }
+    h3, p {
+      margin-inline-start: 30%;
+      margin-inline-end: 15%;
+    }
+    h1, h3 {
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 6rem;
+      font-weight: 700;
+      margin-inline-start: 20%;
+      margin-top: 1.5rem;
+    }
+    h3 {
+      font-size: 3rem;
+    }
+  }
+
+  .challenge-content {
+    margin-top: 3rem;
+    margin-inline-start: 30%;
+    margin-inline-end: 15%;
+
+    .challenge-points {
+      font-size: 1.5rem;
+      color: $color-primary;
+      text-transform: lowercase;
+    }
+    img {
+      width: 6rem;
+      float: left;
+      margin-inline-start: -17%;
+    }
+    img[alt*='coffee'] {
+      width: 4rem;
+    }
+    img[alt*='cross'],
+    img[alt*='apple'],
+    img[alt*='arm'],
+    img[alt*='grip'] {
+      width: 5rem;
+    }
+    h3 {
+      font-size: 3rem;
+    }
+    h5 {
+      font-size: 1.5rem;
+    }
+    h3, h5 {
+      text-transform: uppercase;
+    }
+  }
+}

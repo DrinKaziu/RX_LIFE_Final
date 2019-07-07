@@ -1,0 +1,23 @@
+.header {
+  grid-column: full-start / full-end;
+  z-index: 10;
+
+  .header-content {
+    display: grid;
+    grid-template-rows: 12.5vh;
+    grid-template-columns: [full-start] minmax(6rem, 2fr) [center-start] 1.35fr [logo-end links-start] 6fr [links-end auth-start] 0.65fr [center-end] minmax(6rem, 2fr) [full-end];
+
+    .header-content-logo {
+      grid-column: center-start / logo-end;
+      justify-self: start;
+    }
+    .header-content-links {
+      grid-column: links-start / links-end;
+      justify-self: end; 
+    }
+    .header-content-auth {
+      grid-column: auth-start / center-end;
+      justify-self: end; 
+    }
+  }
+}

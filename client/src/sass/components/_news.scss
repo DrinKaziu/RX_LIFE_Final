@@ -1,0 +1,25 @@
+.news {
+  background-color: $color-gray;
+  
+  .news-content {
+    align-items: center;
+
+    .news-content-box {
+      
+      .news-content-titles {
+        margin-left: 2%;
+        font-weight: 400;
+        font-size: 1em;
+
+        li {
+          margin-bottom: 1%;
+        }
+
+        a {
+          text-decoration: none;
+          color: $color-text;
+        }
+      }
+    }
+  }
+}

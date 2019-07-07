@@ -1,0 +1,57 @@
+.hero-three {
+  background: url("../img/girl.png") no-repeat;
+  background-color: $color-secondary;
+  background-size: 14rem;
+  background-position: 75% 40%;
+
+  .hero-three-content {
+    color: $color-primary; 
+    margin-top: -8rem;
+    margin-left: 10rem;
+    
+    .hero-three-content-textbox { 
+      align-self: center;
+      z-index: 2;
+
+      .hero-three-content-textbox-logo {
+        float: left;
+        width: 16rem;
+        height: 16rem;
+        margin: 0 6rem 8rem 3rem;
+        background-color: $color-primary;
+        text-align: center;
+        border-radius: 4rem;
+
+        img {
+          margin-top: 12%;
+          width: 12rem;
+        }
+      }
+
+      .hero-three-content-textbox-heading-primary-main {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 6rem;
+        letter-spacing: 0.5rem;
+        line-height: 0.85em;
+      }
+      .hero-three-content-textbox-heading-primary-sub {
+        display: block;
+        font-weight: 400;
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
+        margin-top: 1.5rem;
+      }
+      .apple-store {
+        width: 12rem;
+        margin-top: 2rem;
+      }
+      .google-store {
+        width: 12rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+}

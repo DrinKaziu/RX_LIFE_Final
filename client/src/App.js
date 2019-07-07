@@ -1,18 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Points from './components/Points';
+import Signup from './components/Signup';
+import Ads from './components/Ads';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a href="/auth/google">Sign in with Google</a>
-      </header>
-    </div>
+      <Navbar />
+      <Switch>
+        <Route exact path='/' component={Home}/>
+        <Route exact path='/points' component={Points}/>
+        <Route exact path='/signup' component={Signup} />
+      </Switch>
+      <Ads />
+      <Footer />
+    </div>  
   );
 }
 

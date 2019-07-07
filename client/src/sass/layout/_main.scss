@@ -1,0 +1,8 @@
+.Main {
+  display: grid; 
+  grid-template-rows: minmax(min-content, 12.5vh) minmax(min-content, 25vh) repeat(3, auto);
+  grid-template-columns: 
+        [full-start] minmax(6rem, 2fr) 
+        [center-start] repeat(8, [col-start] minmax(min-content, 10.75rem) [col-end]) [center-end] 
+        minmax(6rem, 2fr) [full-end];
+}

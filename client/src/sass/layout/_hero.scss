@@ -1,0 +1,24 @@
+.hero {
+  grid-column: full-start / full-end;
+
+  .hero-one-content,
+  .hero-two-content,
+  .hero-three-content,
+  .points-hero {
+    display: grid; 
+    grid-template-rows: 12.5vh 50vh;
+    grid-template-columns: [full-start] minmax(6rem, 2fr) [center-start] repeat(8, [col-start] minmax(min-content, 10.75rem) [col-end]) [center-end] minmax(6rem, 2fr) [full-end];
+
+    .hero-one-content-textbox,
+    .hero-two-content-textbox, 
+    .hero-three-content-textbox {
+      grid-row: 2 / 3;
+      grid-column: center-start / center-end;
+    }
+
+    .points-hero-content {
+      grid-row: 2 / 3;
+      grid-column: col-start 4 / col-start 8;
+    }
+  }
+}

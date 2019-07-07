@@ -1,0 +1,9 @@
+.challenge {
+  grid-column: center-start / center-end;
+
+  .challenge-section-title {
+    display: grid; 
+    grid-template-rows: 13.4rem;
+    grid-template-columns: 28rem 1fr;
+  }
+}

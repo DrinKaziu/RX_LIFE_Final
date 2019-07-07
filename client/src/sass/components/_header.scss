@@ -1,0 +1,38 @@
+.header {
+  background-color: $color-primary; 
+  position: relative; 
+  box-shadow: 0 1rem 2rem rgba($color-black, .2);
+}
+
+.header-content {
+  color: $color-white; 
+  align-items: center;
+
+  .header-content-logo {
+    letter-spacing: 0.3rem;
+    img {
+      height: 5rem;
+      margin-right: .3rem;
+    }
+    span {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: $color-white;
+    }
+  }
+  .header-content-links {
+    a {
+      text-decoration: none;
+      color: $color-white;
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+      margin-left: 4rem;
+    }
+  }
+  .header-content-auth { 
+    font-size: 3.2rem;
+    a {
+      color: $color-secondary;
+    }
+  }
+}
