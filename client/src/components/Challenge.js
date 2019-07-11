@@ -16,7 +16,7 @@ import whistleIcon from '../img/whistle-icon.png';
 import video from '../img/video.png';
 import { Accordion, Icon } from 'semantic-ui-react';
 
-class Hero extends Component {
+class Challenge extends Component {
   state = { activeIndex: null }
 
   handleClick = (e, titleProps) => {
@@ -282,4 +282,4 @@ class Hero extends Component {
   }
 }
 
-export default Hero;
+export default Challenge;
