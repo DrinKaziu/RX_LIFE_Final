@@ -4,11 +4,10 @@ import logo2 from '../img/logo2.png';
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faUserPlus, faUserTimes } from '@fortawesome/free-solid-svg-icons';
 
 class Navbar extends Component {
   render() {
-
     const { auth } = this.props;
     return (
       <div className="header">
@@ -28,10 +27,12 @@ class Navbar extends Component {
           <div className="header-content-auth">
             {auth ?
               <a href='/api/logout'>
-                hi, {auth.firstName}
-              </a> :
+                <FontAwesomeIcon icon={faUserTimes} />
+                <h4>hi, {auth.firstName}</h4>
+              </a> 
+              :
               <a href='/auth/google'>
-                <FontAwesomeIcon icon={faUserCircle} />
+                <FontAwesomeIcon icon={faUserPlus} />
               </a>
             }
           </div>

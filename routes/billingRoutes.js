@@ -14,6 +14,6 @@ module.exports = app => {
     req.user.registered = true; 
     const user = await req.user.save();
 
-    res.send (user)
+    res.send(user);
   });
 }

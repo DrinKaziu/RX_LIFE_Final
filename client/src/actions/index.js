@@ -11,6 +11,7 @@ export const fetchUser = () => {
 export const handleStripeToken = (token) => {
   return async dispatch => {
     const res = await axios.post('/api/stripe', token);
-    dispatch({ type: FETCH_USER, payload: res.data })
+    dispatch({ type: FETCH_USER, payload: res.data });
+    alert(`Thank you ${res.data.firstName}!! Your purchase was successful!`);
   }
 }

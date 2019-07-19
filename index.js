@@ -12,7 +12,7 @@ mongoose.connect(keys.mongoURI, { useNewUrlParser: true });
 
 const app = express();
 
-// MIDDLEWARE
+//MIDDLEWARE
 //Boby Parser
 app.use(bodyParser.json())
 //Enable Cookies
@@ -28,6 +28,18 @@ app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+
+//Handle production routing
+if(process.env === 'production') {
+  //if express doesn't recognize route, look in client/build
+  app.use(express.static('client/build')); 
+
+  //if not in client/build get index.html
+  const path = require('path');
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  });
+}
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

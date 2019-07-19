@@ -30,9 +30,13 @@
     }
   }
   .header-content-auth { 
-    font-size: 3.2rem;
+    font-size: 3rem;
+    h4 {
+      margin-top: 1rem;
+    }
     a {
       color: $color-secondary;
+      text-align: center; 
     }
   }
 }
