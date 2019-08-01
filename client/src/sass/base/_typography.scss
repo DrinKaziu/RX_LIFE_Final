@@ -1,6 +1,16 @@
 body {
   font-family: 'Ubuntu', sans-serif;
   color: $color-text;
-  letter-spacing: 3px;
+  letter-spacing: .3rem;
   line-height: 1.5em;
+
+  @include respond(tab-port) {
+    letter-spacing: .1rem;
+    line-height: 1.3em;
+  }
+
+  @include respond(phone) {
+    letter-spacing: .1rem;
+    line-height: 1.25em;
+  }
 }

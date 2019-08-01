@@ -5,11 +5,19 @@
   .header-content {
     display: grid;
     grid-template-rows: 12.5vh;
-    grid-template-columns: [full-start] minmax(6rem, 2fr) [center-start] 1.35fr [logo-end links-start] 6fr [links-end auth-start] 1fr [center-end] minmax(6rem, 2fr) [full-end];
+    grid-template-columns: [full-start] minmax(6rem, 2fr) [center-start] minmax(max-content, 1.35fr) [logo-end links-start] 6fr [links-end auth-start] 1fr [center-end] minmax(6rem, 2fr) [full-end];
 
+    @media only screen and (max-width: 800px) {
+      grid-template-columns: [full-start] minmax(2rem, 2fr) [center-start] minmax(max-content, 1.35fr) [logo-end links-start] 6fr [links-end auth-start] 1fr [center-end] minmax(2rem, 1fr) [full-end];
+    }
     .header-content-logo {
       grid-column: center-start / logo-end;
       justify-self: start;
+
+      @media only screen and(max-width: 660px) {
+        grid-column: full-start / logo-end;
+        margin-left: 10%;
+      }
     }
     .header-content-links {
       grid-column: links-start / links-end;
@@ -18,6 +26,11 @@
     .header-content-auth {
       grid-column: auth-start / center-end;
       justify-self: end; 
+
+      @media only screen and(max-width: 660px) {
+        grid-column: auth-start / full-end;
+        margin-right: 10%;
+      }
     }
   }
 }

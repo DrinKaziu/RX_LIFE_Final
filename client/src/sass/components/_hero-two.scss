@@ -4,12 +4,32 @@
   background-color: $color-white;
   background-position: 80% center;
 
+  @include respond(tab-land) {
+    margin-left: 10%; 
+  }
+
+  @include respond(tab-port) {
+    background-position: 100% center; 
+  }
+
+  @include respond(phone) {
+    background-position: 175% center; 
+  }
+
   .hero-two-content {
     color: $color-primary; 
     margin-top: -8rem;
     
     .hero-two-content-textbox { 
       align-self: center;
+
+      // @include respond(tab-port) {
+      //   padding-left: 8rem;
+      // }
+
+      // @include respond(phone) {
+      //   margin-left: -4rem;
+      // }
 
       .hero-two-content-textbox-heading-primary-main {
         display: block;

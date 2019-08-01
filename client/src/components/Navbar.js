@@ -21,8 +21,6 @@ class Navbar extends Component {
             <HashLink to='/#challenge-section'>The Challenge</HashLink>
             <NavLink to='/points'>The Points</NavLink>
             <a href="/points#how-it-works-section">How to Play</a>
-            <a href="#about">About</a>
-            <a href="#account">Account</a>
           </div>
           <div className="header-content-auth">
             {auth ?

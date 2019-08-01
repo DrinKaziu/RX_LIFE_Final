@@ -6,7 +6,7 @@
   .hero-three-content,
   .points-hero {
     display: grid; 
-    grid-template-rows: 12.5vh 50vh;
+    grid-template-rows: 12.5vh minmax(50vh, min-content);
     grid-template-columns: [full-start] minmax(6rem, 2fr) [center-start] repeat(8, [col-start] minmax(min-content, 10.75rem) [col-end]) [center-end] minmax(6rem, 2fr) [full-end];
 
     .hero-one-content-textbox,

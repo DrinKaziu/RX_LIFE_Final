@@ -30,20 +30,11 @@ require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
 
 //Handle production routing
-// if(process.env === 'production') {
-//   //if express doesn't recognize route, look in client/build
-//   app.use(express.static('client/build')); 
-
-//   //if not in client/build get index.html
-//   const path = require('path');
-//   app.get('*', (req, res) => {
-//     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-//   });
-// }
-
 if(process.env.NODE_ENV === 'production') {
+  //if express doesn't recognize route, look in client/build
   app.use(express.static('client/build'));
   
+  //if not in client/build get index.html
   const path = require('path');
   app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))

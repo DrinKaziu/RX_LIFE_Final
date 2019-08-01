@@ -5,4 +5,11 @@
         [full-start] minmax(6rem, 2fr) 
         [center-start] repeat(8, [col-start] minmax(min-content, 10.75rem) [col-end]) [center-end] 
         minmax(6rem, 2fr) [full-end];
+  
+  @media only screen and (max-width: 500px) {
+    grid-template-columns: 
+        [full-start] minmax(min-content, 2fr) 
+        [center-start] repeat(8, [col-start] minmax(min-content, 10.75rem) [col-end]) [center-end] 
+        minmax(min-content, 2fr) [full-end];
+  }
 }
