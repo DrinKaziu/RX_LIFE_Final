@@ -4,6 +4,10 @@
   background-size: 14rem;
   background-position: 75% 40%;
 
+  @media only screen and (max-width: 1000px) {
+    background-position: 85% 40%;
+  }
+
   .hero-three-content {
     color: $color-primary; 
     margin-top: -8rem;
@@ -12,6 +16,26 @@
     .hero-three-content-textbox { 
       align-self: center;
       z-index: 2;
+
+      @media only screen and (max-width: 800px) {
+        margin-left: -10%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        margin-left: 0;
+      }
+
+      @media only screen and (max-width: 600px) {
+        margin-left: -10%;
+      }
+
+      @media only screen and (max-width: 500px) {
+        margin-left: -20%;
+      }
+
+      @media only screen and (max-width: 400px) {
+        margin-left: -40%;
+      }
 
       .hero-three-content-textbox-logo {
         float: left;
@@ -25,6 +49,11 @@
         img {
           margin-top: 12%;
           width: 12rem;
+        }
+
+        @media only screen and (max-width: 700px) {
+          float: none;
+          margin: -2% 0 -2% -2%;
         }
       }
 
@@ -51,6 +80,12 @@
         width: 12rem;
         margin-top: 2rem;
         margin-left: 1rem;
+      }
+
+      .google-store, .apple-store {
+        @media only screen and (max-width: 700px) {
+          margin-bottom: 5%;
+        }
       }
     }
   }

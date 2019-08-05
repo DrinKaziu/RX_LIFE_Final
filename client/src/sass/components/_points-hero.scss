@@ -3,7 +3,24 @@
   background-color: $color-gray;
   background-size: 20%;
   background-repeat: no-repeat;
-  background-position: 22rem 6rem;
+  background-position: 20% 100%;
+
+  @media only screen and (max-width: 1000px) {
+    background-size: 23%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    background-size: 30%;
+  }
+
+  @media only screen and (max-width: 700px) {
+    background-size: 35%;
+  }
+
+  @media only screen and (max-width: 500px) {
+    background-size: 50%;
+    background-position: 5% 100%;
+  }
 
   .points-hero-content-primary {
     display: block;
@@ -13,6 +30,10 @@
     font-size: 8rem;
     letter-spacing: 0.5rem;
     line-height: 0.85em;
+
+    @media only screen and (max-width: 500px) {
+      font-size: 6rem;
+    }
   }
   .points-hero-content-sub {
     display: block;
@@ -29,4 +50,21 @@
     letter-spacing: 0.3rem;
     margin-top: 1.5rem;
   }
+
+  .points-hero-content-primary,
+  .points-hero-content-sub,
+  .points-hero-content-sub-2 {
+    @media only screen and (max-width: 800px) {
+      margin-left: 40%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      margin-left: 50%;
+    }
+
+    @media only screen and (max-width: 500px) {
+      margin-left: 50%;
+    }
+  }
+
 }
